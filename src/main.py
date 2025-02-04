@@ -1,17 +1,47 @@
 name = "Niraj"
 
-print(f"Length={len(name)}")
+no_name = None
 
-# String slices
-print("------Slices------")
-print(name[0]) # N
-print(name[0:2]) # Ni
-print(name[-1]) # j
-print(name[0:]) # Niraj
-print(name[0:-1]) # Nira
+if name == "Niraj":
+    print("Awesome name!")
+elif name == "niraj":
+    print("Okay")
+else:
+    print("Cap")
 
-print("------Conversion------")
-print(name.lower()) # niraj
-print(name.upper()) # NIRAJ
-print(", ".join(["a","b","c"])) # a, b, c
-print("   niraj".strip()) # niraj
+
+if no_name is None:
+    print("Wait, no name?")
+else:
+    print("has name")
+
+
+# Ternary
+conditional_name = "Rust is still best" if no_name is None else "Python is fine too"
+print(conditional_name)
+
+
+is_hot = True
+
+if is_hot is True:
+    print("it's hot today")
+else:
+    print("cold")
+
+
+# Equivalent &&
+if is_hot and name is not None:
+    print("Hot and has name")
+
+# Equivalent to ||
+if no_name is not None or conditional_name == "Rust is still best":
+    print("Marvelous")
+else:
+    print("meh!")
+
+
+# Equivalent to !is_hot
+if not is_hot:
+    print("Is not hot")
+else:
+    print("is hot")
