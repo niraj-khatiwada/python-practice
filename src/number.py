@@ -40,3 +40,7 @@ print("Factorial", math.factorial(5))
 print("Readable number", 1_000_000)
 
 print("Another way of writing number", 1e6)
+
+
+print("Max ", max(1, 2, 3))
+print("Min ", min(1, 2, 3))
