@@ -54,7 +54,8 @@ for row in matrix:
 
 # Sorting
 nums = [2, 3, 1]
-nums.sort()
+print(sorted(nums))  # This does not mutate original variable
+nums.sort()  # This sorts in place i.e. mutates original variable
 print("ASC", nums)
 nums.sort(reverse=True)
 print("DESC", nums)
@@ -65,3 +66,43 @@ nums_2 = nums.copy()
 nums_2[0] = 11
 print(nums)  # Wont' be affected
 print(nums_2)
+
+
+# We can also initialize using list()
+items = list()  # or []
+
+items.append(1)
+items.append(2)
+items.append(3)
+
+print(items)
+
+
+# Initialize a new list with certain length
+list_of_10_len = [0] * 10
+
+print(list_of_10_len)
+
+
+# Merge 2 lists
+
+list_1 = [1, 2, 3]
+list_2 = [4, 5, 6]
+
+print("Merged", list_1 + list_2)
+
+
+# List comprehension
+
+list = [1, 2, 3]
+
+list_2 = [i * 10 for i in list]
+
+print(list_2)
+
+
+# Reverse trick
+
+list = [1, 2, 3]
+
+print("Reverse = ", list[::-1])
