@@ -4,5 +4,5 @@ print(len(tuples))
 print(tuples[0])
 
 # Destructuring
-(a, b, c) = tuples
+[a, b, c] = tuples
 print(a, b, c)
