@@ -19,3 +19,4 @@ if __name__ == "__main__":
     print(Person.get_class_name())
     male = Male(name="Niraj")
     male.greet()
+    print(isinstance(male, Male))
