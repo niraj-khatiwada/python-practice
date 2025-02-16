@@ -40,3 +40,10 @@ obj3["name"] = "Boss"  # Won't be changed in obj
 obj3["nested"]["items"].append(4)  # # Won't be changed in obj
 
 print(obj, obj3)
+
+# Merge two dicts
+
+dict1 = {"a": "a", "b": "b"}
+dict2 = {"c": "c", "d": "d"}
+merged = {**dict1, **dict2}
+print("Merged= ", merged)

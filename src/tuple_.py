@@ -22,3 +22,9 @@ print(a, rest)
 # We need to atleast have a comma at the end to have a single value tuple
 
 tuples_2 = (1,)
+
+# Merge tuple
+tup1 = (1, 2)
+tup2 = (2, 3)
+merged = (*tup1, *tup2)
+print("Merged= ", merged)  # 1, 2, 2, 3

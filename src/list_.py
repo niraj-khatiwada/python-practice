@@ -106,3 +106,9 @@ print(list_2)
 list = [1, 2, 3]
 
 print("Reverse = ", list[::-1])
+
+# Merge two lists
+list1 = [1, 2, 3]
+list2 = [3, 4, 5]
+merged = [*list1, *list2]
+print("Merged= ", merged)  # 1, 2, 3, 3, 4, 5
